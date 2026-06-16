@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Listing App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <h1>Movie Finder</h1>
+        <p>Search movies, browse posters, and view details instantly.</p>
+      </div>
+      <form class="search-form" id="search-form">
+        <label for="query">🎬 Search movies</label>
+        <div class="search-row">
+          <input id="query" type="search" placeholder="Type a movie name..." required />
+          <button type="submit">Search</button>
+        </div>
+      </form>
+    </header>
+
+    <main>
+      <section class="stats-bar" id="stats-bar">
+        <p>Search for a movie to get started.</p>
+      </section>
+
+      <section class="movie-grid" id="movie-grid"></section>
+    </main>
+  </div>
+
+  <div class="movie-modal hidden" id="movie-modal">
+    <div class="movie-modal-content">
+      <button class="close-modal" id="close-modal" aria-label="Close details">×</button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
